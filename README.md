@@ -44,11 +44,11 @@ Este projeto em C++ usa OpenGL (GLUT) e stb_image para criar uma cena 3D interat
   
   Na raiz do projeto (onde estão src/ e include/):
   ```bash
-  gcc src/*.c -Iinclude -o car_project -lGL -lGLU -lglut -lm
+  gcc src/*.c -Iinclude -o ambient -lGL -lGLU -lglut -lm
   ```
   ## Como executar
   ```bash
-  ./car_project
+  ./ambient
   ```
 
 ## Funcionalidades e Controles
@@ -67,7 +67,7 @@ Este projeto em C++ usa OpenGL (GLUT) e stb_image para criar uma cena 3D interat
   
   - PgUp / PgDn: aproximação/afastamento (modo cenário)
   
-  - + / −: aumenta/diminui velocidade do carro
+  -  -/+: aumenta/diminui velocidade do carro
     
   - Esc: sair
 
@@ -77,7 +77,7 @@ Este projeto em C++ usa OpenGL (GLUT) e stb_image para criar uma cena 3D interat
   
   → Provavelmente foi compilado apenas main.c. Use src/*.c para linkar todos os .c:
   ```bash
-  gcc src/*.c -Iinclude -o car_project -lGL -lGLU -lglut -lm
+  gcc src/*.c -Iinclude -o ambient -lGL -lGLU -lglut -lm
   ```
 
   **Se acontecer fatal error: GL/glut.h: No such file or directory**
