@@ -27,10 +27,12 @@ Simulação em **C + OpenGL (GL/GLU/GLUT)**: um carro percorre uma pista com cur
   ```
 
 ## Estrutura do projeto
+ ```bash
   car_project/
   ├── include/        # headers (.h)
   └── src/            # código-fonte (.c)
       └── main.c
+ ```
 
 ## Como compilar (Ubuntu/WSL)
   
@@ -46,24 +48,34 @@ Simulação em **C + OpenGL (GL/GLU/GLUT)**: um carro percorre uma pista com cur
 ## Controles
   
   Espaço: play/pause do carro
+  
   F: alterna modo de câmera (seguir carro ↔ orbitar cenário)
+  
   A / D: orbitar câmera em torno do carro
+  
   W / S: aproximar/afastar a câmera
+  
   Q / E: aumentar/diminuir altura da câmera
+  
   Setas: orbitar a cena (modo cenário)
+  
   PgUp / PgDn: aproximação/afastamento (modo cenário)
+  
   + / −: aumenta/diminui velocidade do carro
+    
   Esc: sair
 
 ## Dicas e Solução de Problemas
 
   Caso veja o erro “undefined reference to …” ao linkar:
+  
   → Provavelmente foi compilado apenas main.c. Use src/*.c para linkar todos os .c:
   ```bash
   gcc src/*.c -Iinclude -o car_project -lGL -lGLU -lglut -lm
   ```
 
   Se acontecer fatal error: GL/glut.h: No such file or directory
+  
   → Instale os dev packages:
   ```bash
   sudo apt update
