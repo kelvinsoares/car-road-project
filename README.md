@@ -1,1 +1,71 @@
 # car-road-project
+
+# Projeto OpenGL — Carro em ambiente 3D
+
+Simulação em **C + OpenGL (GL/GLU/GLUT)**: um carro percorre uma pista com curva, com câmera em terceira pessoa e cenário (árvores, pista, grama, chão, iluminação etc).
+
+---
+
+## Sumário
+- [Pré-requisitos](#pré-requisitos)
+- [Estrutura do projeto](#estrutura-do-projeto)
+- [Como compilar (Ubuntu/WSL)](#como-compilar-ubuntuwsl)
+- [Como executar](#como-executar)
+- [Controles](#controles)
+- [Dicas e Solução de Problemas](#dicas-e-solução-de-problemas)
+  
+---
+
+## Pré-requisitos
+
+### Ubuntu / WSL (Windows 11)
+  Instale compilador e bibliotecas OpenGL:
+
+  ```bash
+  sudo apt update
+  sudo apt install -y build-essential freeglut3-dev mesa-common-dev libglu1-mesa-dev
+  ```
+
+## Estrutura do projeto
+  car_project/
+  ├── include/        # headers (.h)
+  └── src/            # código-fonte (.c)
+      └── main.c
+
+## Como compilar (Ubuntu/WSL)
+  
+  Na raiz do projeto (onde estão src/ e include/):
+  ```bash
+  gcc src/*.c -Iinclude -o car_project -lGL -lGLU -lglut -lm
+  ```
+  ## Como executar
+  ```bash
+  ./car_project
+  ```
+
+## Controles
+  
+  Espaço: play/pause do carro
+  F: alterna modo de câmera (seguir carro ↔ orbitar cenário)
+  A / D: orbitar câmera em torno do carro
+  W / S: aproximar/afastar a câmera
+  Q / E: aumentar/diminuir altura da câmera
+  Setas: orbitar a cena (modo cenário)
+  PgUp / PgDn: aproximação/afastamento (modo cenário)
+  + / −: aumenta/diminui velocidade do carro
+  Esc: sair
+
+## Dicas e Solução de Problemas
+
+  Caso veja o erro “undefined reference to …” ao linkar:
+  → Provavelmente foi compilado apenas main.c. Use src/*.c para linkar todos os .c:
+  ```bash
+  gcc src/*.c -Iinclude -o car_project -lGL -lGLU -lglut -lm
+  ```
+
+  Se acontecer fatal error: GL/glut.h: No such file or directory
+  → Instale os dev packages:
+  ```bash
+  sudo apt update
+  sudo apt install -y freeglut3-dev mesa-common-dev libglu1-mesa-dev
+  ```
