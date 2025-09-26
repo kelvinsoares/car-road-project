@@ -19,10 +19,13 @@ Este projeto em C++ usa OpenGL (GLUT) e stb_image para criar uma cena 3D interat
 ### Ubuntu / WSL (Windows 11)
   Instale compilador e bibliotecas OpenGL:
 
-  **OpenGL**
-  **GLUT**
-  **stb_image**
-  **Compilador C++ compatível**
+  - OpenGL
+    
+  - GLUT
+    
+  - stb_image
+    
+  - Compilador C++ compatível
 
   ```bash
   sudo apt update
@@ -50,23 +53,23 @@ Este projeto em C++ usa OpenGL (GLUT) e stb_image para criar uma cena 3D interat
 
 ## Funcionalidades e Controles
   
-  **Espaço: play/pause do carro**
+  - Espaço: play/pause do carro
   
-  **F: alterna modo de câmera (seguir carro ↔ orbitar cenário)**
+  - F: alterna modo de câmera (seguir carro ↔ orbitar cenário)
   
-  **A / D: orbitar câmera em torno do carro**
+  - A / D: orbitar câmera em torno do carro
   
-  **W / S: aproximar/afastar a câmera**
+  - W / S: aproximar/afastar a câmera
   
-  **Q / E: aumentar/diminuir altura da câmera**
+  - Q / E: aumentar/diminuir altura da câmera
   
-  **Setas: orbitar a cena (modo cenário)**
+  - Setas: orbitar a cena (modo cenário)
   
-  **PgUp / PgDn: aproximação/afastamento (modo cenário)**
+  - PgUp / PgDn: aproximação/afastamento (modo cenário)
   
-  **+ / −: aumenta/diminui velocidade do carro**
+  - + / −: aumenta/diminui velocidade do carro
     
-  **Esc: sair**
+  - Esc: sair
 
 ## Dicas e Solução de Problemas
 
