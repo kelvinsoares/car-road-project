@@ -1,8 +1,6 @@
-# car-road-project
-
 # Projeto OpenGL — Carro em ambiente 3D
 
-Simulação em **C + OpenGL (GL/GLU/GLUT)**: um carro percorre uma pista com curva, com câmera em terceira pessoa e cenário (árvores, pista, grama, chão, iluminação etc).
+Este projeto em C++ usa OpenGL (GLUT) e stb_image para criar uma cena 3D interativa que simula um carro percorrendo uma pista com curvas, com câmera em terceira pessoa e cenário (árvores, pista, grama, chão, iluminação).
 
 ---
 
@@ -11,7 +9,7 @@ Simulação em **C + OpenGL (GL/GLU/GLUT)**: um carro percorre uma pista com cur
 - [Estrutura do projeto](#estrutura-do-projeto)
 - [Como compilar (Ubuntu/WSL)](#como-compilar-ubuntuwsl)
 - [Como executar](#como-executar)
-- [Controles](#controles)
+- [Funcionalidades e Controles](#funcionalidades-e-controles)
 - [Dicas e Solução de Problemas](#dicas-e-solução-de-problemas)
   
 ---
@@ -50,7 +48,7 @@ Simulação em **C + OpenGL (GL/GLU/GLUT)**: um carro percorre uma pista com cur
   ./car_project
   ```
 
-## Controles
+## Funcionalidades e Controles
   
   **Espaço: play/pause do carro**
   
