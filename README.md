@@ -22,7 +22,8 @@ O ambiente inclui céu com skybox, árvores distribuídas aleatoriamente, pista 
 
 ## Controles:
   
-  - Setas do teclado: mover e girar o carro
+  - Up/Down/Left/Right: rotacionar a câmera
+  - W/S/A/D: mover o carro para frente ou para trás, para a esquerda ou direita
   - Esc: sair
 
 ## Pré-requisitos
@@ -53,13 +54,6 @@ O ambiente inclui céu com skybox, árvores distribuídas aleatoriamente, pista 
  ├── skybox.c / skybox.h   # Céu e nuvens
  ├── scene.c / scene.h     # Cena principal (câmera, iluminaçao, display)
  └── main.c                # Ponto de entrada
-assets/
- ├── track.png             # Textura da pista
- ├── grassy.png            # Textura da grama
- ├── car_diffuse.png       # Textura do carro
- ├── tire.png              # Textura da lateral do pneu
- ├── rim.png               # Textura da roda (aro)
- └── skybox/               # 6 imagens do céu (front, back, left, right, top, bottom)
  ```
 
 ## Como compilar (Ubuntu/WSL)
