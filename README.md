@@ -24,6 +24,7 @@ O ambiente inclui céu com skybox, árvores distribuídas aleatoriamente, pista 
   
   - Up/Down/Left/Right: rotacionar a câmera
   - W/S/A/D: mover o carro para frente ou para trás, para a esquerda ou direita
+  - PgUp/PgDn: aumenta ou diminui o zoom
   - Esc: sair
 
 ## Pré-requisitos
