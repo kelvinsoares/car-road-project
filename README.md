@@ -50,13 +50,14 @@ O ambiente inclui céu com skybox, árvores distribuídas aleatoriamente, pista 
  src/
  ├── car.c / car.h         # Carro e rodas
  ├── track.c / track.h     # Pista oval
- ├── ground.c              # Grama / terreno
+ ├── ground.c /ground.h    # Grama / terreno
  ├── trees.c / trees.h     # Árvores
  ├── skybox.c / skybox.h   # Céu e nuvens
  ├── scene.c / scene.h     # Cena principal (câmera, iluminaçao, display)
+ ├── input.c / input.h     # Cena principal (câmera, iluminaçao, display)
+ ├── window.c / window.h     # Cena principal (câmera, iluminaçao, display)
  └── main.c                # Ponto de entrada
  ```
-
 ## Como compilar (Ubuntu/WSL)
 
 Após instalar dependências:
